@@ -1,32 +1,11 @@
 # Customized Owasp ZAP Dockerfile with support for authentication
 
-FROM owasp/zap2docker-weekly
-MAINTAINER Dick Snel <dick.snel@ictu.nl>
+FROM centos:centos7
 
-USER root
+RUN yum -y install curl
 
-# Install Selenium compatible firefox
-RUN apt-get -y remove firefox
-
-RUN cd /opt && \
-	wget https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz && \
-	tar -xvzf geckodriver-v0.11.1-linux64.tar.gz && \
-	chmod +x geckodriver && \
-	ln -s /opt/geckodriver /usr/bin/geckodriver && \
-	export PATH=$PATH:/usr/bin/geckodriver
-
-RUN cd /opt && \
-	wget http://ftp.mozilla.org/pub/firefox/releases/46.0/linux-x86_64/en-US/firefox-46.0.tar.bz2 && \
-	bunzip2 firefox-46.0.tar.bz2 && \
-	tar xvf firefox-46.0.tar && \
-	ln -s /opt/firefox/firefox /usr/bin/firefox
+RUN curl -O https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2_6_0_windows.exe && \  
+    curl -O https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2_6_0_windows-x32.exe && \
+    curl -O https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz && \
+    curl -O https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Crossplatform.zip
 	
-RUN pip install selenium==2.53.6
-RUN pip install pyvirtualdisplay
-
-COPY zap-baseline-custom.py /zap/
-
-RUN chown zap:zap /zap/zap-baseline-custom.py && \ 
-	chmod +x /zap/zap-baseline-custom.py
-
-USER root
