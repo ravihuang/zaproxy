@@ -17,5 +17,9 @@ RUN yum -y install curl hg git
 #RUN curl -Lo minikube https://github.com/kubernetes/minikube/releases/download/v0.25.0/minikube-linux-amd64
 
 #RUN git clone https://github.com/shihyu/python_ebook.git
+#RUN curl -o pmd.zip -L https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.0.1/pmd-bin-6.0.1.zip
 
-RUN curl -o pmd.zip -L https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.0.1/pmd-bin-6.0.1.zip
+RUN curl -LO https://packages.cloud.google.com/yum/pool/df7f026762a109d02bf92ec559bbeb3f490e8e35885ffc2631042ffcd9b945ab-kubeadm-1.9.3-0.x86_64.rpm
+RUN curl -LO https://packages.cloud.google.com/yum/pool/b59d38d81913c58b9b382e4c39a00303d68ece464f5402046f0900e70ea106f8-kubelet-1.9.3-0.x86_64.rpm
+RUN curl -LO https://packages.cloud.google.com/yum/pool/eb54809406a7bc73f1996ce669323b65f0846d1830ef04a1e69e66f633a627a7-kubectl-1.9.3-0.x86_64.rpm
+RUN curl -LO https://packages.cloud.google.com/yum/pool/fe33057ffe95bfae65e2f269e1b05e99308853176e24a4d027bc082b471a07c0-kubernetes-cni-0.6.0-0.x86_64.rpm
