@@ -6,9 +6,9 @@ RUN apk add --no-cache curl git
 #    curl -O -L https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Crossplatform.zip
 #RUN  curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.3.1/appium-desktop-Setup-1.3.1.exe               
 #RUN  curl -O -L https://github.com/Amab/SWADroid/releases/download/1.5.2/SWADroid-release-1.5.2.apk
-
-RUN curl -O -L https://github.com/nokia/RED/releases/download/0.8.3/RED_0.8.3.20180206122915-win32.win32.x86_64.zip
-RUN curl -O -L https://github.com/nokia/RED/releases/download/0.8.3/RED_feature_0.8.3.201802061228.zip
+RUN curl -O -L https://github.com/undera/perfmon-agent/releases/download/2.2.3/ServerAgent-2.2.3.zip
+#RUN curl -O -L https://github.com/nokia/RED/releases/download/0.8.3/RED_0.8.3.20180206122915-win32.win32.x86_64.zip
+#RUN curl -O -L https://github.com/nokia/RED/releases/download/0.8.3/RED_feature_0.8.3.201802061228.zip
 
 #RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 #RUN curl -Lo minikube https://github.com/kubernetes/minikube/releases/download/v0.25.0/minikube-linux-amd64
