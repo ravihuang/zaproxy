@@ -21,4 +21,4 @@ RUN apk add --no-cache curl git
 #RUN curl -LO https://packages.cloud.google.com/yum/pool/eb54809406a7bc73f1996ce669323b65f0846d1830ef04a1e69e66f633a627a7-kubectl-1.9.3-0.x86_64.rpm
 #RUN curl -LO https://packages.cloud.google.com/yum/pool/fe33057ffe95bfae65e2f269e1b05e99308853176e24a4d027bc082b471a07c0-kubernetes-cni-0.6.0-0.x86_64.rpm
 
-RUN curl -LO https://github.com/code-dot-org/code-dot-org/archive/v2018-10-02.0.tar.gz
+RUN curl -LO https://github.com/code-dot-org/code-dot-org/archive/v2018-10-30.0.tar.gz
