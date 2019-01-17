@@ -4,7 +4,7 @@ RUN apk add --no-cache curl git
 #    curl -O -L https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2_6_0_windows-x32.exe && \
 #    curl -O -L https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Linux.tar.gz && \
 #    curl -O -L https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2.6.0_Crossplatform.zip
-#RUN  curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.3.1/appium-desktop-Setup-1.3.1.exe               
+
 #RUN  curl -O -L https://github.com/Amab/SWADroid/releases/download/1.5.2/SWADroid-release-1.5.2.apk
 #RUN curl -O -L https://github.com/undera/perfmon-agent/releases/download/2.2.3/ServerAgent-2.2.3.zip
 #RUN curl -O -L https://github.com/nokia/RED/releases/download/0.8.3/RED_0.8.3.20180206122915-win32.win32.x86_64.zip
@@ -21,4 +21,7 @@ RUN apk add --no-cache curl git
 #RUN curl -LO https://packages.cloud.google.com/yum/pool/eb54809406a7bc73f1996ce669323b65f0846d1830ef04a1e69e66f633a627a7-kubectl-1.9.3-0.x86_64.rpm
 #RUN curl -LO https://packages.cloud.google.com/yum/pool/fe33057ffe95bfae65e2f269e1b05e99308853176e24a4d027bc082b471a07c0-kubernetes-cni-0.6.0-0.x86_64.rpm
 
-RUN curl -LO https://github.com/code-dot-org/code-dot-org/archive/v2018-10-30.0.tar.gz
+# RUN curl -LO https://github.com/code-dot-org/code-dot-org/archive/v2018-10-30.0.tar.gz
+
+RUN  curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.10.0/Appium-1.10.0.dmg && \
+     curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.10.0/appium-desktop-setup-1.10.0.exe
