@@ -1,1 +1,1 @@
-# OWASP ZAP Downloader for Chinese
+# Downloader for Chinese
