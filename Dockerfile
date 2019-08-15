@@ -26,4 +26,5 @@ RUN apk add --no-cache curl git
 #RUN  curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.10.0/Appium-1.10.0.dmg && \
 #     curl -O -L https://github.com/appium/appium-desktop/releases/download/v1.10.0/appium-desktop-setup-1.10.0.exe
 
-RUN curl -LO https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
+#RUN curl -LO https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
+RUN git clone https://github.com/Baeldung/spring-security-registration.git
