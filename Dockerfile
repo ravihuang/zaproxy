@@ -29,4 +29,6 @@ RUN apk add --no-cache curl git
 #RUN curl -LO https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
 #RUN git clone https://github.com/Baeldung/spring-security-registration.git
 
-RUN git clone https://github.com/istresearch/scrapy-cluster.git
+#RUN git clone https://github.com/istresearch/scrapy-cluster.git
+
+Run curl -LO https://github.com/protegeproject/protege-distribution/releases/download/v5.5.0/Protege-5.5.0-win.zip
