@@ -34,4 +34,4 @@ RUN apk add --no-cache curl git
 #Run curl -LO https://github.com/protegeproject/protege-distribution/releases/download/v5.5.0/Protege-5.5.0-win.zip
 
 #RUN git clone https://github.com/OSSpk/Awesome-Python-Games.git
-RUN curl -LO https://api.github.com/repos/wszqkzqk/deepin-wine-ubuntu/tarball/2.18-12-3
+RUN git clone https://github.com/ravihuang/DataPlayground.git
