@@ -34,4 +34,5 @@ RUN apk add --no-cache curl git
 #Run curl -LO https://github.com/protegeproject/protege-distribution/releases/download/v5.5.0/Protege-5.5.0-win.zip
 
 #RUN git clone https://github.com/OSSpk/Awesome-Python-Games.git
-RUN git clone https://github.com/ravihuang/DataPlayground.git
+#RUN git clone https://github.com/ravihuang/DataPlayground.git
+RUN curl -LO https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
