@@ -36,4 +36,6 @@ RUN apk add --no-cache curl git
 #RUN git clone https://github.com/OSSpk/Awesome-Python-Games.git
 #RUN git clone https://github.com/ravihuang/DataPlayground.git
 #RUN curl -LO https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
-Run git clone https://github.com/LLK/scratch-gui.git
+#Run git clone https://github.com/LLK/scratch-gui.git
+RUN curl -LO https://llk.github.io/scratch-gui/develop/lib.min.js && \
+    curl -LO https://llk.github.io/scratch-gui/develop/chunks/gui.js
