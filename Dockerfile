@@ -37,5 +37,9 @@ RUN apk add --no-cache curl git
 #RUN git clone https://github.com/ravihuang/DataPlayground.git
 #RUN curl -LO https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
 #Run git clone https://github.com/LLK/scratch-gui.git
-RUN curl -LO https://llk.github.io/scratch-gui/develop/lib.min.js && \
-    curl -LO https://llk.github.io/scratch-gui/develop/chunks/gui.js
+#RUN curl -LO https://llk.github.io/scratch-gui/develop/lib.min.js && \
+#    curl -LO https://llk.github.io/scratch-gui/develop/chunks/gui.js
+
+RUN curl -LO https://wingware.com/pub/wing-101/7.2.5.0/wing-101-7_7.2.5-0_amd64.deb && \
+    curl -LO https://wingware.com/pub/wing-personal/7.2.5.0/wing-personal7_7.2.5-0_amd64.deb
+
